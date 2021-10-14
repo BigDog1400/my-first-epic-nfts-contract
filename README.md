@@ -10,6 +10,11 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/sample-script.js
 npx hardhat help
 ```
+# Deployment
+
+To deploy the contract you will need to add .env with the required enviroment variables. Also, you can change the value in the deploy.js that is been passed to the deploy function if you want to set another max amount of NFTs availables.
+
+To deploy in a rinkeby testnet:
+```npx hardhat run scripts/deploy.js --network rinkeby```
